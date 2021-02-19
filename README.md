@@ -1,21 +1,12 @@
 # Typescript / Javascript Setup Configuration
 
-### [Basic Typescript](https://github.com/kcam031892/JS-TS-Setup-Files/tree/main/typescript)
+- ## [Basic Typescript](https://github.com/kcam031892/JS-TS-Setup-Files/tree/main/typescript)
 
----
+- ## [Basic JEST Setup with JS](https://github.com/kcam031892/JS-TS-Setup-Files/tree/main/js-jest)
 
-## Basic JEST Setup with JS
+- ## [JEST SETUP WITH TYPESCRIPT](https://github.com/kcam031892/JS-TS-Setup-Files/tree/main/ts-with-jest)
 
-- devDependecies
-  - npm i --save-dev jest
-- package.json
-  - "test": "jest"
-
----
-
-### [JEST SETUP WITH TYPESCRIPT](https://github.com/kcam031892/JS-TS-Setup-Files/tree/main/ts-with-jest)
-
-# Typescript with Express
+### Typescript with Express
 
 a startup files for express application with typescript.
 eslint installed.
