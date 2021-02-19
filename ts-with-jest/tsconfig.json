@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "lib": ["ES2015"],
+    "strict": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "paths": {
+      "@src/*": ["*"],
+      "@utils/*": ["utils/*"],
+      "@appliances/*": ["appliances/*"]
+    },
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src", "test"],
+  "exclude": ["node_modules"]
+}

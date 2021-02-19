@@ -13,6 +13,8 @@
 - package.json
   - "test": "jest"
 
+---
+
 # JEST setup with Typescript
 
 a test setup with module resolution.
@@ -58,8 +60,7 @@ a test setup with module resolution.
       "baseUrl": "./src",
       "paths": {
         "@src/*": ["*"],
-        "@utils/*": ["utils/*"],
-        "@appliances/*": ["appliances/*"]
+        "@utils/*": ["utils/*"]
       },
       "esModuleInterop": true,
       "skipDefaultLibCheck": true,
@@ -75,8 +76,6 @@ a test setup with module resolution.
   ```json
   "scripts": {
     "test": "jest --watchAll",
-    "start": "babel-node dist/app.js",
-    "dev": "nodemon --exec babel-node dist/app.js",
     "clean": "rimraf ./dist"
   },
   ```
