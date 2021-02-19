@@ -1,4 +1,4 @@
-## Basic Typescript Setup
+# Basic Typescript Setup
 
 - tsc --init
 - configure tsconfig.json

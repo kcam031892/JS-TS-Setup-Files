@@ -1,4 +1,4 @@
-## Basic JEST Setup with JS
+# Basic JEST Setup with JS
 
 - devDependecies
   - npm i --save-dev jest

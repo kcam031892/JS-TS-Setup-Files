@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["ES2017"],
+    "outDir": "./dist",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@server/*": ["*"],
+      "@server/src/*": ["*/src"],
+      "@controllers/*": ["server/src/controllers/*"],
+      "@middlewares/*": ["server/src/middlewares/*"],
+      "@models/*": ["server/src/models/*"],
+      "@routes/*": ["server/src/routes/*"],
+      "@validators/*": ["server/src/middlewares/validators/*"],
+      "@utils/*": ["server/src/utils/*"],
+      "@constants/*": ["server/src/constants/*"],
+      "@interfaces/*": ["server/src/interfaces/*"],
+      "@enums/*": ["server/src/enums/*"]
+    },
+    "typeRoots": ["./server/src/@types", "./node_modules/@types"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./server/src/**/*"],
+  "exclude": ["node_modules"]
+}

@@ -1,4 +1,4 @@
-## JEST setup with Typescript
+# JEST setup with Typescript
 
 a test setup with typescript module resolution.
 
