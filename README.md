@@ -1,10 +1,6 @@
 # Typescript / Javascript Setup Configuration
 
-## Basic Typescript Setup
-
-- tsc --init
-- configure tsconfig.json
-- tsc -w
+### [Basic Typescript](https://github.com/kcam031892/JS-TS-Setup-Files/tree/main/typescript)
 
 ---
 
