@@ -11,11 +11,9 @@
           "@controllers": "./dist/controllers",
           "@routes": "./dist/routes",
           "@middlewares": "./dist/middlewares",
-          "@models/*": "./dist/models/*",
-          "@routes/*": "./dist/routes/*",
-          "@validators/*": "./dist/middlewares/validators/*",
-          "@utils/*": "./dist/utils/*",
-          "@constants/*": "./dist/constants/*"
+          "@validators": "./dist/middlewares/validators",
+          "@utils": "./dist/utils",
+          "@constant": "./dist/constant"
         }
       }
     ]

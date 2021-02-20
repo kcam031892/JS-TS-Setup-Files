@@ -16,7 +16,7 @@
       "@routes/*": ["server/src/routes/*"],
       "@validators/*": ["server/src/middlewares/validators/*"],
       "@utils/*": ["server/src/utils/*"],
-      "@constants/*": ["server/src/constants/*"],
+      "@constant/*": ["server/src/constant/*"],
       "@interfaces/*": ["server/src/interfaces/*"],
       "@enums/*": ["server/src/enums/*"]
     },

@@ -8,8 +8,7 @@
     "baseUrl": "./src",
     "paths": {
       "@src/*": ["*"],
-      "@utils/*": ["utils/*"],
-      "@appliances/*": ["appliances/*"]
+      "@utils/*": ["utils/*"]
     },
     "esModuleInterop": true,
     "skipDefaultLibCheck": true,
