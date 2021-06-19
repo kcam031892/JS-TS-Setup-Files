@@ -1,4 +1,4 @@
-# Typescript with Express
+# NodeJS Express app with typescript setup.
 
 a startup files for express application with typescript.
 eslint installed.

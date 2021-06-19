@@ -8,7 +8,7 @@ const app = express();
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req: Request, res: Response) => {
-  res.send(stringRequired);
+  res.send('hello');
 });
 
 app.use('/user', userRoute);
