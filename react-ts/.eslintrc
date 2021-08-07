@@ -28,7 +28,31 @@
   "rules": {
     "linebreak-style": "off",
     "import/prefer-default-export": "off",
-    "no-unused-vars": "error",
+    "react/jsx-props-no-spreading": "off",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/ban-types": "off",
+    "react/no-unescaped-entities": "off",
+    "no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_" }
+    ],
+    "eslint/no-shadow": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "react/require-default-props": "off",
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"],
+        "leadingUnderscore": "allow"
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+    ],
     "prettier/prettier": [
       "error",
       {
