@@ -16,65 +16,90 @@
 
 - .eslintrc.js
 
-  ```js
-  module.exports = {
-    extends: [
-      'airbnb-typescript',
-      'airbnb/hooks',
-      'plugin:@typescript-eslint/recommended',
-      'plugin:jest/recommended',
-      'plugin:prettier/recommended',
+  ```json
+  {
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint", "jest", "prettier"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "rules": {
+    "linebreak-style": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/ban-types": "off",
+    "react/no-unescaped-entities": "off",
+    "no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_" }
     ],
-    plugins: ['react', '@typescript-eslint', 'jest', 'prettier'],
-    env: {
-      browser: true,
-      es6: true,
-      jest: true,
-    },
-    globals: {
-      Atomics: 'readonly',
-      SharedArrayBuffer: 'readonly',
-    },
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-      ecmaFeatures: {
-        jsx: true,
-      },
-      ecmaVersion: 2018,
-      sourceType: 'module',
-      project: ['./tsconfig.json'],
-    },
-    rules: {
-      'linebreak-style': 'off',
-      'import/prefer-default-export': 'off',
-      'no-unused-vars': 'error',
-      'prettier/prettier': [
-        'error',
-        {
-          endOfLine: 'auto',
-        },
-      ],
-    },
-  };
+    "eslint/no-shadow": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "react/require-default-props": "off",
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"],
+        "leadingUnderscore": "allow"
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
+
   ```
 
 - .prettierrc
 
   ```.prettierrc
-  {
+{
   "singleQuote": true,
   "trailingComma": "all",
   "jsxBracketSameLine": true,
-  "printWidth": 80,
+  "printWidth": 120,
   "tabWidth": 2,
   "useTabs": false,
   "semi": true
-  }
+}
   ```
 
 - package.json
 
   ```json
     "format": "prettier --write src/**/*.ts{,x}",
-    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}"
+    "lint": "eslint src --cache --max-warnings=0"
   ```
