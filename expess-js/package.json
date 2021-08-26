@@ -1,0 +1,39 @@
+{
+  "name": "yira",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src --exec \"babel-node src\"",
+    "build": "rimraf dist && babel src -s -D -d dist",
+    "start": "yarn build & node ./dist/index.js",
+    "lint": "eslint src --cache --max-warnings=0",
+    "sequelize": "node_modules/.bin/sequelize"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "sequelize-cli": "^6.2.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}
