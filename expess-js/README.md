@@ -1,9 +1,7 @@
 # NodeJS Express with Sequelize Setup
----
 A NodeJS Express boilerplate with Sequelize
 
 ## Features:
----
 * Transpiler: Babel
 * Eslint with Google config.
 * Formatter: prettier
@@ -15,13 +13,10 @@ A NodeJS Express boilerplate with Sequelize
 * nodemon.
 
 ## Requirements:
----
 * NodeJS
 * Yarn
 
 ## How to use:
----
-
 1. Install Packages
 ```terminal
   $ yarn
