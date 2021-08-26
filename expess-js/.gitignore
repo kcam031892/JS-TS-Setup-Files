@@ -2,3 +2,4 @@
 /dist/
 .eslintcache
 yarn-error.log
+.env

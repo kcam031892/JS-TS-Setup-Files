@@ -21,6 +21,17 @@ A NodeJS Express boilerplate with Sequelize
 ```terminal
   $ yarn
 ```
+2. Create env
+  * NODE_ENV: string
+  * PORT: number
+  * DB_HOST: string
+  * DB_USER: string
+  * DB_PASSWORD: string
+  * DB_DATABASE: string
+  * DB_PORT: number
+  * DB_LOGGING: boolean
+  * DB_SYNC: boolean
+
 2. Run in development mode
 ```terminal
   $ yarn dev
