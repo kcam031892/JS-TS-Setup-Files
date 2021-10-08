@@ -1,0 +1,4 @@
+/src/migrations/
+/src/seeders/
+/dist/
+/node_modules/

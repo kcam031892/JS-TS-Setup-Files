@@ -1,0 +1,4 @@
+/node_modules/
+/dist/
+.eslintcache
+yarn-error.log
